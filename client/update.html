@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link rel="stylesheet" href="style.css">
+</head>
+<body onload="formdata()" class="updatebody">
+    
+    <div class="container-fluid navdiv">
+        <div class="container pt-3">
+          <div class="row">
+            <div class="col-2">
+              <a class="navbar-brand" href="#">
+                  <img src="./images/organi.log" alt="" width="150" height="64">
+                </a>
+            </div>
+            <div class="col-7">
+            <div class="row">
+              <div class="col-6 text-end"><a class="nav-link fs-2 fw-bolder text-dark" href="./index.html">Home</a></div>
+              <div class="col-6"><a class="nav-link fs-2 fw-bolder text-dark" href="./addproduct.html">Add Product</a></div>
+            </div>
+            </div>
+            <div class="col-3">
+             <div class="row pt-3">
+              <div class="col"></div>
+              <div class="col text-end"><img src="./images/icons8-heart-50.png" alt="" width="34" height="24"></div>
+              <div class="col text-end"><img src="./images/icons8-bag-30.png" alt="" width="34" height="24"></div>
+              <div class="col fs-4">item:$150.00</div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-3 "></div>
+            <div class="col-6 lh-lg shadow-sm p-3 mb-5 bg-body rounded text-center">
+                <form onsubmit="updatedata(event)">
+                    <div class="row-12 mb-4 mt-3"><input type="text" name="name" id="name" placeholder="Enter name"></div>
+                <div class="row-12 mb-4 mt-3"><input type="text" name="image" id="image" placeholder="Enter nameimageurl"></div>
+                <div class="row-12 mb-4 mt-3"><input type="text" name="category" id="category" placeholder="Enter Category"></div>
+                <div class="row-12 mb-4 mt-3"><input type="number" name="price" id="price" placeholder="Enter Price"></div>
+                <div class="row-12 mb-4 mt-3"><input type="text" name="use" id="use" placeholder="Enter Use"></div>
+                <div class="row-12 mb-4 mt-3"><input type="text" name="description" id="description" placeholder="Enter Description here"></div>
+                <input type="submit" value="Submit" id="formbtn" class="mt-1 mb-3" >
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><script src="script.js"></script>
+</body>
+</html>

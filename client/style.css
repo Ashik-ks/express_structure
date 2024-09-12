@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navdiv{
+    background-color: rgb(235, 241, 240)
+}
+.addproductbody,.updatebody{
+    background-color: azure;
+}
+#name,#price,#category,#image,#use{
+    width: 100%;
+    border-radius: 7px;
+    padding: 8px;
+}
+#description{
+    width: 100%;
+    padding: 25px;
+    border-radius: 7px;
+}
+#formbtn{
+    padding: 4px 13px 4px 13px;
+    border-radius: 14px;
+    border: 1px solid rgb(102, 155, 241);
+    background-color: rgb(102, 155, 241);
+    color: white;
+}
+#viewdiv,#viewdiv1,#viewdiv2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 15px;
+    row-gap: 60px;
+}
+.datacontainerimg{
+    width: 250px;
+}
+.single_datacontainerimg{
+    width: 500px;
+}
+.dropdownnav{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(121, 177, 47);
+}
+#searchbox{
+    width: 100%;
+    padding: 12px 0px 12px 0px;
+}
+.bannerimg1{
+    width: 100%;
+}
+.twobtn,.detailsbtn{
+    background-color: rgb(52, 140, 222);
+    border: 1px solid rgb(52, 140, 222) ;
+    border-radius: 8px;
+    color: white;
+}
+.indexh1{
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.productbody{
+    background-color: azure;
+}
