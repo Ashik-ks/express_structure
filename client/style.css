@@ -25,7 +25,7 @@
     background-color: rgb(102, 155, 241);
     color: white;
 }
-#viewdiv,#viewdiv1,#viewdiv2{
+#viewdiv,#viewdiv1,#viewdiv2,#viewdiv3,#viewdiv4{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 15px;

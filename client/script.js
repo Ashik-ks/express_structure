@@ -55,14 +55,20 @@ async function fetchdata(){
         let viewdiv = document.getElementById('viewdiv');
         let viewdiv1 = document.getElementById('viewdiv1');
         let viewdiv2 = document.getElementById('viewdiv2');
+        let viewdiv3 = document.getElementById('viewdiv3');
+        let viewdiv4 = document.getElementById('viewdiv4');
 
         let rows = '' 
         let rows1 = ''
         let rows2 = ''
+        let rows3 = ''
+        let rows4 = ''
 
         let arr = [''];
         let arr1 = [''];
+        let arr2 = [''];
         let arr3 = [''];
+        let arr4 = ['']
 
 
         for (i = 0; i < display.length; i++) {
@@ -102,11 +108,23 @@ async function fetchdata(){
                 <div class="mt-3 "><button class="ps-4 pe-4 fs-5 twobtn" onclick="handleClick2('${id}')">Delete</button></div></div>
            `
            }
+           if(display[i].category === 'Others'){
+            arr3 = 
+            rows3 = rows3 + `
+            <div class="container  d-flex-row lh-lg pb-3 pt-3 mt-5 shadow p-3 mb-5 bg-body rounded">
+              <div id = "imageid" class ="pe-3" ><img  src ="${display[i].image} "class = "datacontainerimg"></div>
+               <div id = "titleid" class ="pe-3 fs-1 fw-bold namediv">${display[i].name}</div>
+                <div class="mt-3 "><button class = "ps-2 pe-2 fs-5 twobtn" onclick="handleClick('${id}')">view more</button></div>
+                <div class="mt-3 "><button class="ps-4 pe-4 fs-5 twobtn" onclick="handleClick2('${id}')">Delete</button></div></div>
+           `
+           }
         }
 
         viewdiv.innerHTML = arr;
         viewdiv1.innerHTML = arr1;
         viewdiv2.innerHTML = arr2;
+        viewdiv3.innerHTML = arr3;
+        viewdiv4.innerHTML = arr4;
     } catch (error) {
         console.log("error : ", error)
     }
