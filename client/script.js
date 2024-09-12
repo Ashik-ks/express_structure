@@ -97,10 +97,9 @@ async function fetchdata(){
             rows2 = rows2 + `
             <div class="container  d-flex-row lh-lg pb-3 pt-3 mt-5 shadow p-3 mb-5 bg-body rounded">
               <div id = "imageid" class ="pe-3" ><img  src ="${display[i].image} "class = "datacontainerimg"></div>
-               <div id = "titleid" class ="pe-3 fs-2 fw-bold namediv">${display[i].name}</div>
+               <div id = "titleid" class ="pe-3 fs-1 fw-bold namediv">${display[i].name}</div>
                 <div class="mt-3 "><button class = "ps-2 pe-2 fs-5 twobtn" onclick="handleClick('${id}')">view more</button></div>
-                <div class="mt-3 "><button class="ps-4 pe-4 fs-5 twobtn" onclick="handleClick2('${id}')">Delete</button></div>
-              </div>
+                <div class="mt-3 "><button class="ps-4 pe-4 fs-5 twobtn" onclick="handleClick2('${id}')">Delete</button></div></div>
            `
            }
         }
